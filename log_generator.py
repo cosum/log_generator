@@ -14,7 +14,7 @@ for i in range(10000):
         day=random.randint(1, 28),
         hour=random.randint(0, 23),
         minute=random.randint(0, 59),
-        second=random.randint(0, 59)sssss
+        second=random.randint(0, 59)
     )
     log_entry = {
         'timestamp': random_date,
@@ -34,7 +34,7 @@ os.makedirs(log_dir, exist_ok=True)
 log_file_path = os.path.join(log_dir, 'logs.log')
 
 # Save logs to the .log file
-with open(log_file_path, 'w') as f:
+withs open(log_file_path, 'w') as f:
     for log in sorted_logs:
         f.write(f"{log['timestamp'].isoformat()} [{log['level']}] {log['message']}\n")
 
