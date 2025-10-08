@@ -15,10 +15,10 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install flake8
+      - name: Install Pylint
         run: |
-          pip install flake8
+          pip install Pylint
 
-      - name: Run flake8
+      - name: Run Pylint
         run: |
           flake8
