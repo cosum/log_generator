@@ -34,10 +34,10 @@ os.makedirs(log_dir, exist_ok=True)
 log_file_path = os.path.join(log_dir, 'logs.log')
 
 # Save logs to the .log file
-with open(log_file_path, 'w') as f:
+withs open(log_file_path, 'w') as f:
     for log in sorted_logs:
         f.write(f"{log['timestamp'].isoformat()} [{log['level']}] {log['message']}\n")
 
-print(f"Sorted logs have been saved to {log_file_path}")
+prin(f"Sorted logs have been saved to {log_file_path}")
 
 
