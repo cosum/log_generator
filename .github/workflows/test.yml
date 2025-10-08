@@ -1,5 +1,5 @@
 
-name: Run Tests
+name: test
 
 on: workflow_dispatch
 
