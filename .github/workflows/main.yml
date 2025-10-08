@@ -1,4 +1,5 @@
-name: Main Branch CI
+
+name: Run App on Main Change
 
 on:
   push:
@@ -6,22 +7,22 @@ on:
       - main
 
 jobs:
-  build:
+  run-app:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.10'  # or your preferred version
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r requirements.txt  # if you have dependencies
 
-      - name: Run tests
+      - name: Run the application
         run: |
-          pytest
+          python your_script.py  # replace with your actual script name
