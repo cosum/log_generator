@@ -14,7 +14,7 @@ for i in range(10000):
         day=random.randint(1, 28),
         hour=random.randint(0, 23),
         minute=random.randint(0, 59),
-        second=random.randint(0, 59)
+        second=random.randint(0, 59)sssss
     )
     log_entry = {
         'timestamp': random_date,
